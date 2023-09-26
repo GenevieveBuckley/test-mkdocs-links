@@ -1,0 +1,20 @@
+site_name: My Docs
+
+theme:
+  name: material
+
+nav:
+  - Overview: index.md
+  - API:
+      - magicgui: api/hi.md
+
+plugins:
+  - search
+  - mkdocstrings
+
+  - gallery:
+      examples_dirs: [docs/examples]
+      gallery_dirs: [docs/generated_examples]
+#       filename_pattern: /*.py  # which scripts will be executed for the docs
+#       ignore_pattern: /__init__.py  # ignore these example files completely
+#       run_stale_examples: True
